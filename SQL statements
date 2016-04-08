@@ -1,0 +1,28 @@
+create table DCU_users (
+userid int not null primary,
+username varchar(50),
+userpass varchar(50),
+firstname varchar(50),
+lastname varchar(50)
+);
+
+create table DCU_accounts (
+accid int not null primary key,
+user id int not null,
+balance number(38,2),
+acctype varchar(50),
+active int
+);
+alter table DCU_accounts add foreign key (userid) references DCU_user(userid);
+
+create table DCU_transactions (
+transid int not null primary key,
+accid int not null,
+amount number(38,2),
+transtype varchar(50)
+);
+alter table DCU_transactions add foreign key (accid) references DCU_accounts(accid);
+
+insert into DCU_users (userid, username, userpass, firstname, lastname) values (1, 'Eric', 'abc123', 'Eric', 'Cheng');
+insert into DCU_accounts (accid, userid, balance, acctype, active) values (1, 1, 1000, 'checking', 1);
+insert into DCU_accounts (accid, userid, balance, acctype, active) values (2, 1, 10000, 'savings', 1);
