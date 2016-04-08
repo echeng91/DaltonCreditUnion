@@ -1,5 +1,5 @@
 create table DCU_users (
-userid int not null primary,
+userid int not null primary key,
 username varchar(50),
 userpass varchar(50),
 firstname varchar(50),
@@ -8,14 +8,14 @@ lastname varchar(50)
 
 create table DCU_accounts (
 accid int not null primary key,
-user id int not null,
-balance number(38,2),
+userid int not null,
+balance number(38, 2),
 acctype varchar(50),
 active int
 );
-alter table DCU_accounts add foreign key (userid) references DCU_user(userid);
+alter table DCU_accounts add foreign key (userid) references DCU_users(userid);
 
-create table DCU_transactions (
+create table DCU_transactions( 
 transid int not null primary key,
 accid int not null,
 amount number(38,2),
