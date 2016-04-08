@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-1.7.0-openjdk-1.7.0.91.x86_64">
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+>>>>>>> 4f881c0d7c83de56d5d18ef24f1f72a4c192a18b
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
 		<attributes>
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
+=======
+>>>>>>> 4f881c0d7c83de56d5d18ef24f1f72a4c192a18b
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="/home/oracle/Desktop/JAR Files/eclipselink.jar"/>
@@ -19,5 +26,9 @@
 	<classpathentry kind="lib" path="/home/oracle/Desktop/JAR Files/jstl-1.2.jar"/>
 	<classpathentry kind="lib" path="/home/oracle/Desktop/JAR Files/ojdbc6.jar"/>
 	<classpathentry kind="lib" path="/home/oracle/Desktop/JAR Files/taglibs-standard-impl-1.2.5.jar"/>
+<<<<<<< HEAD
+=======
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0"/>
+>>>>>>> 4f881c0d7c83de56d5d18ef24f1f72a4c192a18b
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
